@@ -1,0 +1,408 @@
+/* HTML reset  */
+
+/* random */
+#image1 {
+  width: 70px;
+  position: absolute;
+  right: 625px;
+  top: 15px;
+  margin: 0px 10px;
+  animation: heart .5s 0s infinite;
+}
+@keyframes heart{
+  0% {
+    transform:  scale(0.8);
+  }
+  5% {
+    transform:  scale(0.9);
+  }
+  10% {
+    transform:  scale(0.8);
+  }
+  15% {
+    transform:  scale(1);
+  }
+  50% {
+    transform:  scale(0.8);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+.wrapper{
+   display: inline-flex;
+}
+.wrapper .dynamic{
+  color: #18E747;
+  /* line-height: 90px; */
+  height: 30px;
+  /* background: #580b3a; */
+  overflow: hidden;
+}
+.dynamic li{
+  position: relative;
+  top:2.5px;
+  animation: slide 8s steps(2) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -60px;
+    margin: 0 -35px 0 px ;
+  }
+}
+.dynamic li span::after{
+  content: '';
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #0c0f0e;
+  /* border-left: #99cfe5; */
+
+  border-left: 2px solid #18E747 ;
+  animation: typing 4s steps(12) infinite;
+  /* animation-timing-function: ; */
+}
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px ;
+  }
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to right, #0d5a46, #1b6881, #99cfe5); */
+  background: #0c0f0e;
+  margin: 0px;
+  height: 15vh;
+  color: #f8f5ef;
+  padding: 0%;
+  font-size: 1.4em;
+}
+.game::before {
+  
+    content: "";
+    background: url("https://wallpaperaccess.com/full/1409110.jpg")
+      no-repeat center center/cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    /* To bring content above strip  */
+    z-index: -4;
+    opacity: 0.5;
+  }
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid wheat;
+  color: white;
+  height: 100vh;
+  row-gap: 5px;
+  /* padding: 10; */
+  /* padding: 5px; */
+}
+.gameHeading{
+    font-size: 2rem;
+}
+.pig {
+  border: 3px solid rgb(245, 63, 163);
+  background: linear-gradient(to right, #580b3a, #f03eac); 
+ 
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 30vw;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px 2px;
+  
+}
+.guess {
+  border: 2px solid rgb(247, 243, 20);
+  margin-bottom: 10px;
+  background:  linear-gradient(to right, #ba8b02, #181818);
+}
+.guess a{
+    color: #eedf08;
+}
+.pig a{
+    color: #18E747;
+}
+.right{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solide black;
+    background: linear-gradient(to right, #085078, #abd3ce);
+}
+.gameHeading{
+  font-size: 2.5em;
+        font-family: serif;
+        color: transparent;
+        text-align: center;
+        animation: effect 2s linear infinite;
+  animation: colorAnimation .5s linear infinite;
+}
+@keyframes  colorAnimation{
+  0% {
+      background: linear-gradient(
+          #8b0d0d, #cc3146);
+      -webkit-background-clip: text;
+  }
+
+  100% {
+      background: linear-gradient(
+          #b3e662, #64b805);
+      -webkit-background-clip: text;
+  }
+}
+.contact::before{
+    content: "";
+    background: url('https://www.pngkit.com/png/detail/207-2076842_email-icon-blue-png.png')center center/cover no-repeat;
+    position: absolute;
+    height: 50vh;
+    width: 100vw;
+    /* To bring content above strip  */
+    z-index: -4;
+    opacity: 0.3;
+}
+.contact{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid wheat;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  /* form uigradient website to apply gradients background */
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  display: flex; 
+  flex-direction: column;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-family: calculus LCD;
+}
+.calculator::before {
+  content: "";
+  background: url("https://cdn.hk01.com/di/media/images/2073807/org/c11fb1bbd0e85b17a123e88ef04db738.jpg/8R-b9JEVNVU_Z_M6R8dE3PiyFtqibHt7FWiqTxVoqk8?v=w1920")
+    no-repeat center center/cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  /* To bring content above strip  */
+  z-index: -10;
+  opacity: 0.3;
+}
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+}
+
+/* cal container  */
+
+.cal {
+  background: linear-gradient(to right, #c94b4b, #4b134f);
+  width: 90vh;
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: 12px 12px 21px -3px; /* bottom rigth blur intensity*/
+  padding: 10px;
+  /* overflow-y: auto; */
+  /* position: relative; */
+  /* top: 30px; */
+}
+
+/* Display  */
+
+.cal-display {
+  background-color: black;
+  color: white;
+  border-radius: 15px 15px 0px 0px;
+  padding: 0.1px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cal-display h1 {
+  /* margin: 0%; */
+  margin: 0px;
+  padding: 20px;
+  overflow-x: auto;
+}
+/* Buttons  */
+
+.cal-button {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+}
+.cal-button button {
+  font-size: 1.5rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.cal-button .operand:hover {
+  background-color: rgb(158, 154, 154);
+  font-weight: bold;
+}
+#equal-to {
+  grid-column: -2;
+  grid-row: 1/8;
+  background-color: rgb(86, 201, 95);
+}
+#clear_ {
+  grid-column: -2;
+  grid-row: 8/10;
+  background-color: rgb(230, 28, 28);
+}
+#decimal {
+  grid-row: 5;
+}
+#equal-to:hover {
+  background-color: rgb(135, 224, 142);
+}
+
+#clear_:hover {
+  background-color: rgb(235, 98, 98);
+}
+.operator {
+  background-color: #f7e27a;
+}
+.operator:hover {
+  background-color: #97800a;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(170, 168, 165);
+}
+button:active {
+  transform: translateY(1px); /* to make button dipped when pressed*/
+}
+.uoperator {
+  background-color: #f0d030;
+}
+.uoperator:hover {
+  background-color: #97800a;
+}
+/* Game */
+
+
+/* imgae */
+
+/* list styling */
+li{
+  list-style: none;
+  font-size: 1.5rem;
+}
+a{
+ text-decoration:none;
+ font-size: 1.5rem;
+}
+
+/* RESPONSIVE MAKING Media-Querry  */
+
+@media screen and (max-width: 600px) {
+  .heading h2{
+    font-size: 1rem;
+  }
+  .heading span{
+    font-size: 1rem;
+  }
+  .calculator{
+    /* display: inline-block; */
+   /* align-items: flex-start; */
+    /* float: left; */
+    /* width: 50%; */
+    /* height: 90%; */
+  
+  }
+  .calculator .cal{
+    /* display: inline-block; */
+   /* align-items: flex-start; */
+    /* float: left; */
+    /* width: 90vw;  */
+    height: 60%;
+    /* margin-left: 30px; */
+  }
+  .calculator button{
+    /* display: inline-block; */
+   /* align-items: flex-start; */
+    /* float: left; */
+    /* width: 50%; */
+    padding: 0px;
+    margin: 1px;
+    font-size: smaller;
+
+  }
+  .game{
+    /* width: 90%; */
+
+  }
+  .contact{
+    /* width: 90%;  */
+  }
+  .right{
+    /* width: 90%;   */
+  }
+  a{
+    font-size: 1rem;
+  }
+  li{
+    font-size: 1rem;
+  }
+  .wrapper .dynamic{
+    color: #18E747;
+    /* line-height: 90px; */
+    height: 20px;
+    /* background: #580b3a; */
+    overflow: hidden;
+  }
+  @keyframes slide {
+    100%{
+      top: -37px;
+      margin: 0 -35px 0 px ;
+    }
+  }
+  #image1 {
+    width: 50px;
+    position: absolute;
+    right: 210px;
+    top: 36px;
+    margin: 0px 10px;
+    animation: heart .5s 0s infinite;
+  }
+  .gameHeading{
+    font-size: 2em;
+          font-family: serif;
+          color: transparent;
+          text-align: center;
+          animation: effect 2s linear infinite;
+    animation: colorAnimation .5s linear infinite;
+  }
+}
