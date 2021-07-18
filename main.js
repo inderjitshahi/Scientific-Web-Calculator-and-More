@@ -134,12 +134,6 @@ inputBtns.forEach((inputBtn) => {
     inputBtn.addEventListener("click", () => addDecimal());
   } else if (inputBtn.classList.contains("uoperator")) {
     inputBtn.addEventListener("click", () => unioperator(inputBtn.value));
-    // inputBtn.addEventListener("click", () => {
-    //   if (inputBtn.textContent !== "=") {
-    //     const displayValue = calDisplay.textContent;
-    //     calDisplay.textContent = displayValue + inputBtn.textContent;
-    //   }
-    // });
   }
 });
 
