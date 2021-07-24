@@ -78,7 +78,3 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".guess").value = "";
 });
 
-// document.querySelector('.number').textContent=12;
-// document.querySelector('.score').textContent=20;
-// document.querySelector('.guess').value=0;
-// value funvtion is used to see or assign value.
