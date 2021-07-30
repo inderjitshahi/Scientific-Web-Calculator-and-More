@@ -44,25 +44,7 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 
-  //   else if (guess > secretNumber) {
-  //     if (score > 0) {
-  //       document.querySelector(".message").textContent = "Too High";
-  //       score -= 1;
-  //       document.querySelector(".score").textContent = score;
-  //     } else {
-  //       document.querySelector(".message").textContent = "😥 You Loose the game";
-  //     }
-  //   }
-  //   //guess is too low
-  //   else {
-  //     if (score > 0) {
-  //       document.querySelector(".message").textContent = "Too Low";
-  //       score--;
-  //       document.querySelector(".score").textContent = score;
-  //     } else {
-  //       document.querySelector(".message").textContent = "😥 You Loose the game";
-  //     }
-  //   }
+ 
 });
 
 //Resetting values
