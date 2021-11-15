@@ -214,7 +214,7 @@ body {
 }
 .calculator {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
   width: 100vw;
