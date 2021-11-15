@@ -7,51 +7,51 @@
   right: 625px;
   top: 15px;
   margin: 0px 10px;
-  animation: heart .5s 0s infinite;
+  animation: heart 0.5s 0s infinite;
 }
-@keyframes heart{
+@keyframes heart {
   0% {
-    transform:  scale(0.8);
+    transform: scale(0.8);
   }
   5% {
-    transform:  scale(0.9);
+    transform: scale(0.9);
   }
   10% {
-    transform:  scale(0.8);
+    transform: scale(0.8);
   }
   15% {
-    transform:  scale(1);
+    transform: scale(1);
   }
   50% {
-    transform:  scale(0.8);
+    transform: scale(0.8);
   }
   100% {
     transform: scale(0.8);
   }
 }
-.wrapper{
-   display: inline-flex;
+.wrapper {
+  display: inline-flex;
 }
-.wrapper .dynamic{
-  color: #18E747;
+.wrapper .dynamic {
+  color: #18e747;
   /* line-height: 90px; */
   height: 30px;
   /* background: #580b3a; */
   overflow: hidden;
 }
-.dynamic li{
+.dynamic li {
   position: relative;
-  top:2.5px;
+  top: 2.5px;
   animation: slide 8s steps(2) infinite;
 }
 @keyframes slide {
-  100%{
-    top: -60px;
-    margin: 0 -35px 0 px ;
+  100% {
+    top: -75px;
+    margin: 0 -35px 0 px;
   }
 }
-.dynamic li span::after{
-  content: '';
+.dynamic li span::after {
+  content: "";
   position: absolute;
   left: 0px;
   height: 100%;
@@ -59,14 +59,14 @@
   background: #0c0f0e;
   /* border-left: #99cfe5; */
 
-  border-left: 2px solid #18E747 ;
+  border-left: 2px solid #18e747;
   animation: typing 4s steps(12) infinite;
   /* animation-timing-function: ; */
 }
 @keyframes typing {
-  100%{
+  100% {
     left: 100%;
-    margin: 0 -35px 0 35px ;
+    margin: 0 -35px 0 35px;
   }
 }
 .heading {
@@ -82,17 +82,16 @@
   font-size: 1.4em;
 }
 .game::before {
-  
-    content: "";
-    background: url("https://wallpaperaccess.com/full/1409110.jpg")
-      no-repeat center center/cover;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    /* To bring content above strip  */
-    z-index: -4;
-    opacity: 0.5;
-  }
+  content: "";
+  background: url("https://wallpaperaccess.com/full/1409110.jpg") no-repeat
+    center center/cover;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  /* To bring content above strip  */
+  z-index: -4;
+  opacity: 0.5;
+}
 
 .game {
   display: flex;
@@ -106,13 +105,12 @@
   /* padding: 10; */
   /* padding: 5px; */
 }
-.gameHeading{
-    font-size: 2rem;
+.gameHeading {
+  font-size: 2rem;
 }
 .pig {
   border: 3px solid rgb(245, 63, 163);
-  background: linear-gradient(to right, #580b3a, #f03eac); 
- 
+  background: linear-gradient(to right, #580b3a, #f03eac);
 }
 .box {
   display: flex;
@@ -123,67 +121,65 @@
   padding: 10px;
   border-radius: 20px;
   box-shadow: 2px 3px 5px 2px;
-  
 }
 .guess {
   border: 2px solid rgb(247, 243, 20);
   margin-bottom: 10px;
-  background:  linear-gradient(to right, #ba8b02, #181818);
+  background: linear-gradient(to right, #ba8b02, #181818);
 }
-.guess a{
-    color: #eedf08;
+.guess a {
+  color: #eedf08;
 }
-.pig a{
-    color: #18E747;
+.pig a {
+  color: #18e747;
 }
-.right{
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solide black;
-    background: linear-gradient(to right, #085078, #abd3ce);
+.right {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solide black;
+  background: linear-gradient(to right, #085078, #abd3ce);
 }
-.gameHeading{
+.gameHeading {
   font-size: 2.5em;
-        font-family: serif;
-        color: transparent;
-        text-align: center;
-        animation: effect 2s linear infinite;
-  animation: colorAnimation .5s linear infinite;
+  font-family: serif;
+  color: transparent;
+  text-align: center;
+  animation: effect 2s linear infinite;
+  animation: colorAnimation 0.5s linear infinite;
 }
-@keyframes  colorAnimation{
+@keyframes colorAnimation {
   0% {
-      background: linear-gradient(
-          #8b0d0d, #cc3146);
-      -webkit-background-clip: text;
+    background: linear-gradient(#8b0d0d, #cc3146);
+    -webkit-background-clip: text;
   }
 
   100% {
-      background: linear-gradient(
-          #b3e662, #64b805);
-      -webkit-background-clip: text;
+    background: linear-gradient(#b3e662, #64b805);
+    -webkit-background-clip: text;
   }
 }
-.contact::before{
-    content: "";
-    background: url('https://www.pngkit.com/png/detail/207-2076842_email-icon-blue-png.png')center center/cover no-repeat;
-    position: absolute;
-    height: 50vh;
-    width: 100vw;
-    /* To bring content above strip  */
-    z-index: -4;
-    opacity: 0.3;
+.contact::before {
+  content: "";
+  background: url("https://www.pngkit.com/png/detail/207-2076842_email-icon-blue-png.png")
+    center center/cover no-repeat;
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  /* To bring content above strip  */
+  z-index: -4;
+  opacity: 0.3;
 }
-.contact{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid wheat;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    width: 100vw;
+.contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid wheat;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
 }
 html {
   box-sizing: border-box;
@@ -194,7 +190,7 @@ body {
   min-height: 100vh;
   /* form uigradient website to apply gradients background */
   background: linear-gradient(to right, #1f4037, #99f2c8);
-  display: flex; 
+  display: flex;
   flex-direction: column;
   /* flex-direction: column; */
   /* justify-content: center; */
@@ -206,7 +202,7 @@ body {
   background: url("https://cdn.hk01.com/di/media/images/2073807/org/c11fb1bbd0e85b17a123e88ef04db738.jpg/8R-b9JEVNVU_Z_M6R8dE3PiyFtqibHt7FWiqTxVoqk8?v=w1920")
     no-repeat center center/cover;
   position: absolute;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   /* To bring content above strip  */
   z-index: -10;
@@ -216,7 +212,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   margin: 0px;
 }
@@ -226,7 +222,7 @@ body {
 .cal {
   background: linear-gradient(to right, #c94b4b, #4b134f);
   width: 90vh;
-  height: 80vh;
+  height: 100vh;
   border-radius: 10px;
   box-shadow: 12px 12px 21px -3px; /* bottom rigth blur intensity*/
   padding: 10px;
@@ -312,83 +308,79 @@ button:active {
 }
 /* Game */
 
-
 /* imgae */
 
 /* list styling */
 
 /* commiting */
-li{
+li {
   list-style: none;
   font-size: 1.5rem;
 }
-a{
- text-decoration:none;
- font-size: 1.5rem;
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 /* RESPONSIVE MAKING Media-Querry  */
 
 @media screen and (max-width: 600px) {
-  .heading h2{
+  .heading h2 {
     font-size: 1rem;
   }
-  .heading span{
+  .heading span {
     font-size: 1rem;
   }
-  .calculator{
+  .calculator {
     /* display: inline-block; */
-   /* align-items: flex-start; */
+    /* align-items: flex-start; */
     /* float: left; */
     /* width: 50%; */
     /* height: 90%; */
-  
   }
-  .calculator .cal{
+  .calculator .cal {
     /* display: inline-block; */
-   /* align-items: flex-start; */
+    /* align-items: flex-start; */
     /* float: left; */
     /* width: 90vw;  */
     height: 60%;
     /* margin-left: 30px; */
   }
-  .calculator button{
+  .calculator button {
     /* display: inline-block; */
-   /* align-items: flex-start; */
+    /* align-items: flex-start; */
     /* float: left; */
     /* width: 50%; */
     padding: 0px;
     margin: 1px;
     font-size: smaller;
-
   }
-  .game{
+  .game {
     /* width: 90%; */
-
   }
-  .contact{
+  .contact {
     /* width: 90%;  */
   }
-  .right{
+  .right {
     /* width: 90%;   */
   }
-  a{
+  a {
     font-size: 1rem;
   }
-  li{
+  li {
     font-size: 1rem;
   }
-  .wrapper .dynamic{
-    color: #18E747;
+  .wrapper .dynamic {
+    color: #18e747;
     /* line-height: 90px; */
     height: 20px;
     /* background: #580b3a; */
     overflow: hidden;
   }
   @keyframes slide {
-    100%{
+    100% {
       top: -37px;
-      margin: 0 -35px 0 px ;
+      margin: 0 -100px 0 px;
     }
   }
   #image1 {
@@ -397,14 +389,14 @@ a{
     right: 210px;
     top: 36px;
     margin: 0px 10px;
-    animation: heart .5s 0s infinite;
+    animation: heart 0.5s 0s infinite;
   }
-  .gameHeading{
+  .gameHeading {
     font-size: 2em;
-          font-family: serif;
-          color: transparent;
-          text-align: center;
-          animation: effect 2s linear infinite;
-    animation: colorAnimation .5s linear infinite;
+    font-family: serif;
+    color: transparent;
+    text-align: center;
+    animation: effect 2s linear infinite;
+    animation: colorAnimation 0.5s linear infinite;
   }
 }
