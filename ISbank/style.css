@@ -13,7 +13,6 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -21,12 +20,13 @@ body {
   color: #ecec4a;
   /* background-color: #f3f3f3;
    */
-   /* background: #12c2e9;  /* fallback for old browsers */
-   /* background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-   /* background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-image: url('bg.jpg');
+  /* background: #12c2e9;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("bg.jpg");
   /* background-attachment: fixed; */
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   padding: 2rem;
 }
@@ -173,7 +173,7 @@ nav {
 .movements__value {
   font-size: 1.7rem;
   margin-left: auto;
-  color:#12c2e9
+  color: #12c2e9;
 }
 
 /* SUMMARY */
@@ -213,8 +213,8 @@ nav {
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
-  color:#e0e025;
-  fontWeight:bolder;
+  color: #e0e025;
+  fontweight: bolder;
 }
 
 /* OPERATIONS */
