@@ -1,78 +1,66 @@
-
-
-body{
-    background-image: url(bg.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    
+body {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.main-box{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-direction: column; */
-    /* border:3px solid blue; */
-    height:95vh;
-    width:100vw;
+.main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* border:3px solid blue; */
+  height: auto;
+  width: auto;
 }
-.llcontainer{
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: space-around;
-    align-items: center;
-    background-color: #3655F5;
-    opacity: 80%;
-    height:75vh;
-    width:35vw;
-    border:3px solid red;
-    
+.llcontainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3655f5;
+  opacity: 80%;
+  height: 75vh;
+  width: 35vw;
+  border: 3px solid red;
 }
-.welcome{
-    color: white;
-    font-size:2rem;
-    font-family: 'Yuji Boku', serif;
-    
+.welcome {
+  color: white;
+  font-size: 2rem;
+  font-family: "Yuji Boku", serif;
 }
 
-.infixInput{
-    color: white;
-    /* height:30vh; */
-    /* border:2px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin:3vh; */
+.infixInput {
+  color: white;
+  /* height:30vh; */
+  /* border:2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin:3vh; */
 }
-.res{
-    color: white;
-    /* border:2px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin:3vh; */
-    margin-bottom: 10vh;
-    visibility:hidden;
-    
+.res {
+  color: white;
+  /* border:2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin:3vh; */
+  margin-bottom: 10vh;
+  visibility: hidden;
 }
 
-
-
-
-
-
-.foot{
-    /* border:3px solid yellow; */
-    width:100vw;
-    height:5vh;
-    display:flex;
-    color:white;
-    justify-content: center;
-    align-items: center;
-    font-size:1.2rem;
-    font-weight: bold;
-
-};
+.foot {
+  /* border:3px solid yellow; */
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
