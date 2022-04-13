@@ -260,7 +260,7 @@ button:active {
    }
  .cal{
   /* width: 90%; */
-  height: 80%;
+  height: 83%;
  }
  .calculator{
    height: 85rem;
@@ -289,11 +289,11 @@ button:active {
     font-size: 2.5rem;
   }
   .cal-button button {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .cal{
     width: 95%;
-    height: 65%;
+    height: 75%;
    }
 }
 @media screen and (max-width: 500px) {
@@ -309,8 +309,7 @@ button:active {
   }
   .cal{
     width: 95%;
-    height: 60%;
-    bottom: 25%;
+    height: 72%;
    }
    .calculator{
      height: 70rem;
@@ -319,7 +318,7 @@ button:active {
     font-size: 3rem;
   }
   .cal-button button {
-    font-size: 1.75rem;
+    font-size: 1.2rem;
     font-weight: bold;
   }
   .cal-display h1 {
@@ -349,8 +348,7 @@ button:active {
   }
   .cal{
     width: 98%;
-    height: 40%;
-    bottom: 44%;
+    height: 50%;
    }
    .calculator{
      height: 50rem;
@@ -359,7 +357,7 @@ button:active {
     font-size: 2rem;
   }
   .cal-button button {
-    font-size: 1rem;
+    font-size: .75em;
     font-weight: bold;
   }
   .cal-display h1 {
@@ -389,7 +387,7 @@ button:active {
   }
   .cal{
     width: 100%;
-    height: 40%;
+    height: 50%;
     bottom: 52%;
    }
   .cal-display{
@@ -402,7 +400,7 @@ button:active {
     font-size: 1.5rem;
   }
   .cal-button button {
-    font-size: .8rem;
+    font-size: .6rem;
     font-weight: bold;
   }
   .cal-display h1 {
