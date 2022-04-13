@@ -260,13 +260,13 @@ button:active {
    }
  .cal{
   /* width: 90%; */
-  height: 70%;
+  height: 80%;
  }
  .calculator{
    height: 85rem;
  }
  .cal-button button {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
 }
 .contact {
   font-size:3rem;
