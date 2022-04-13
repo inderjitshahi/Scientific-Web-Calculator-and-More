@@ -71,9 +71,9 @@ html{
 .cal {
   background: linear-gradient(to right,#7f7880, #1c1b1b);
   width: 75%;
-  height: 75%;
+  height: 85%;
   position: absolute;
-  bottom: 8%;
+  /* bottom: 8%; */
   border-radius: 1rem;
    /* bottom rigth blur intensity*/
   box-shadow: .4rem .6rem white;
@@ -109,7 +109,7 @@ html{
   padding: .5rem;
 }
 .cal-button button {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
   border: .3rem solid black;
   border-radius: 1rem;
