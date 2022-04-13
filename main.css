@@ -63,49 +63,40 @@ html{
 /*********************** Calculator **********************/
 .calculator {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
-  /* width: 100vw; */
-  margin: 0px;
-  /* overflow: scroll; */
+  height: 90rem;
 }
 
 /* cal container  */
 
 .cal {
-  background: linear-gradient(to right, #c94b4b, #4b134f);
-  max-width: 50vh;
-  /* height: 100vh; */
-  border-radius: 10px;
-  
-  box-shadow: 12px 12px 21px -3px; /* bottom rigth blur intensity*/
-  padding: 10px;
-  /* overflow-y: auto; */
-  /* position: relative; */
-  /* top: 30px; */
+  background: linear-gradient(to right,#7f7880, #1c1b1b);
+  width: 75%;
+  height: 70%;
+  position: absolute;
+  bottom: 8%;
+  border-radius: 1rem;
+   /* bottom rigth blur intensity*/
+  box-shadow: .4rem .6rem white;
 }
 
 /* Display  */
 
 .cal-display {
+  overflow: auto;
   background-color: black;
   color: white;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 1rem 1rem 0px 0px;
+  height: 12rem;
+  /* width: 75%; */
   padding: 0.1px;
-  margin: 0px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* overflow-y: hidden; */
-  /* overflow-wrap: normal; */
 }
 .cal-display h1 {
-  /* margin: 0%; */
-  margin: 0px;
-  padding: 20px;
-  overflow-x: scroll;
+  font-size: 3rem;
+  padding: .5rem;
+  overflow: auto;
   
 }
 /* Buttons  */
@@ -114,13 +105,14 @@ html{
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  padding: 10px;
+  grid-gap: .5rem;
+  padding: .5rem;
 }
 .cal-button button {
-  font-size: 1.5rem;
-  border: 2px solid black;
-  border-radius: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border: .3rem solid black;
+  border-radius: 1rem;
 }
 .cal-button .operand:hover {
   background-color: rgb(158, 154, 154);
@@ -129,7 +121,10 @@ html{
 #equal-to {
   grid-column: -2;
   grid-row: 1/8;
-  background-color: rgb(86, 201, 95);
+  font-weight: bolder;
+  font-size: 5rem;
+  color: white;
+  background:linear-gradient(to top,rgb(39, 34, 34),rgb(177, 176, 176)) ;
 }
 #clear_ {
   grid-column: -2;
@@ -140,11 +135,11 @@ html{
   grid-row: 5;
 }
 #equal-to:hover {
-  background-color: rgb(135, 224, 142);
+  background: rgb(135, 224, 142);
 }
 
 #clear_:hover {
-  background-color: rgb(235, 98, 98);
+  background: rgb(235, 98, 98);
 }
 .operator {
   background-color: #f7e27a;
@@ -157,7 +152,7 @@ button:hover {
   background-color: rgb(170, 168, 165);
 }
 button:active {
-  transform: translateY(1px); /* to make button dipped when pressed*/
+  transform: translateY(.4rem); /* to make button dipped when pressed*/
 }
 .uoperator {
   background-color: #f0d030;
@@ -206,7 +201,7 @@ button:active {
 }
 .box {
   /* position: relative; */
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,88 +246,170 @@ button:active {
 /* CopyRight  */
 .right {
   color: white;
-  font-size: ;
+  font-size:3rem;
 }
 /*****************End of CopyRight*******************/
 
 
 /* RESPONSIVE MAKING Media-Querry  */
 
-@media screen and (max-width: 600px) {
-  .heading h2 {
-    font-size: 1rem;
-  }
-  .heading span {
-    font-size: 1rem;
-  }
-  .calculator {
-    /* display: inline-block; */
-    /* align-items: flex-start; */
-    /* float: left; */
-    /* width: 50%; */
-    /* height: 90%; */
-    flex-direction: column;
-    height:180vh;
-  }
-  .calculator .cal {
-    /* display: inline-block; */
-    /* align-items: flex-start; */
-    /* float: left; */
-    /* width: 90vw;  */
-    /* height: 60%; */
-    /* margin-left: 30px; */
-  }
-  .calculator button {
-    /* display: inline-block; */
-    /* align-items: flex-start; */
-    /* float: left; */
-    /* width: 50%; */
-    padding: 0px;
-    margin: 1px;
-    font-size: smaller;
-  }
-  .game {
-    /* width: 90%; */
-  }
+@media screen and (max-width: 900px) {
+
+ .cal{
+  /* width: 90%; */
+  height: 75%;
+ }
+ .calculator{
+   height: 85rem;
+ }
+ .cal-button button {
+  font-size: 3.3rem;
+}
+.contact {
+  font-size:3rem;
+}
+.cal{
+  width: 85%;
+}
+
+}
+@media screen and (max-width: 650px) {
+
   .contact {
-    /* width: 90%;  */
+    font-size:2.5rem;
   }
-  .right {
-    /* width: 90%;   */
+  .right{
+    font-size: 2rem;
   }
-  a {
-    font-size: 1rem;
+  .static{
+    font-size: 3rem;
   }
-  li {
-    font-size: 1rem;
+  .cal-button button {
+    font-size: 3rem;
   }
-  .wrapper .dynamic {
-    color: #18e747;
-    /* line-height: 90px; */
-    height: 20px;
-    /* background: #580b3a; */
-    overflow: hidden;
+  .cal{
+    width: 95%;
+    height: 70%;
+   }
+}
+@media screen and (max-width: 500px) {
+
+  .contact {
+    font-size:1.8rem;
   }
-  @keyframes slide {
-    100% {
-      top: -37px;
-      margin: 0 -100px 0 px;
-    }
+  .right{
+    font-size: 1.5rem;
   }
-  #image1 {
-    width: 50px;
-    position: absolute;
-    right: 210px;
-    top: 36px;
-    margin: 0px 10px;
-    animation: heart 0.5s 0s infinite;
+  .static{
+    font-size: 2.5rem;
+  }
+  .cal{
+    width: 95%;
+    height: 55%;
+    bottom: 25%;
+   }
+   .calculator{
+     height: 70rem;
+   }
+   #equal-to {
+    font-size: 3rem;
+  }
+  .cal-button button {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .cal-display h1 {
+    font-size: 2.5rem;
+    padding: .3rem;
+    
   }
   .gameHeading {
-    font-size: 2em;
-    font-family: serif;
-    color: transparent;
-    text-align: center;
-    animation: effect 2s linear infinite;
-    animation: colorAnimation 0.5s linear infinite;
+    font-size: 3rem;
   }
+  .game-link{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 380px) {
+
+  .contact {
+    font-size:1.5rem;
+  }
+  .right{
+    font-size: 1.2rem;
+  }
+  .static{
+    font-size: 1.5rem;
+  }
+  .cal{
+    width: 98%;
+    height: 40%;
+    bottom: 44%;
+   }
+   .calculator{
+     height: 50rem;
+   }
+   #equal-to {
+    font-size: 2rem;
+  }
+  .cal-button button {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .cal-display h1 {
+    font-size: 2rem;
+    padding: .3rem;
+    
+  }
+  .box{
+    width: 20rem;
+    height: 20rem;
+  }
+  .gameHeading {
+    font-size: 2.5rem;
+  }
+
+}
+@media screen and (max-width: 250px) {
+
+  .contact {
+    font-size:1rem;
+  }
+  .right{
+    font-size: 1rem;
+  }
+  .static{
+    font-size: 1.2rem;
+  }
+  .cal{
+    width: 100%;
+    height: 33%;
+    bottom: 52%;
+   }
+  .cal-display{
+    height: 8rem;
+   }
+   .calculator{
+     height: 45rem;
+   }
+   #equal-to {
+    font-size: 1.5rem;
+  }
+  .cal-button button {
+    font-size: .8rem;
+    font-weight: bold;
+  }
+  .cal-display h1 {
+    font-size: 1.5rem;
+    padding: .2rem;
+    
+  }
+  .box{
+    width: 15rem;
+    height: 15rem;
+  }
+  .game-link{
+    font-size: 1.5rem;
+  }
+
 }
