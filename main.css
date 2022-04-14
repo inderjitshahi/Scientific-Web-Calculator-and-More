@@ -88,8 +88,8 @@ html{
   color: white;
   border-radius: 1rem 1rem 0px 0px;
   height: 12rem;
-  overflow: auto;
-  padding: .5rem;
+  /* overflow: auto; */
+  padding:1rem 2rem;
   /* width: 75%; */
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@ html{
 }
 .cal-display h1 {
   font-size: 2.5rem;
-  /* overflow: auto; */
+  overflow: auto;
 }
 /* Buttons  */
 
@@ -109,7 +109,7 @@ html{
   padding: 2rem 1rem;
 }
 .cal-button button{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   border: .3rem solid black;
   border-radius: 1rem;
@@ -258,23 +258,20 @@ button:active {
   .cal-display{
     height: 10rem;
    }
- .cal{
-  /* width: 90%; */
-  height: 83%;
- }
- .calculator{
-   height: 85rem;
- }
  .cal-button button {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 .contact {
   font-size:3rem;
 }
 .cal{
-  width: 85%;
+  width: 90%;
 }
-
+.cal-button{
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: .5rem;
+  padding: 2.5rem 1.5rem;
+}
 }
 @media screen and (max-width: 650px) {
 
@@ -289,12 +286,15 @@ button:active {
     font-size: 2.5rem;
   }
   .cal-button button {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .cal{
     width: 95%;
-    height: 75%;
    }
+   .cal-button {
+    grid-gap: .5rem;
+    padding: 2rem 1rem;
+  }
 }
 @media screen and (max-width: 500px) {
 
@@ -309,16 +309,12 @@ button:active {
   }
   .cal{
     width: 95%;
-    height: 72%;
-   }
-   .calculator{
-     height: 70rem;
    }
    #equal-to {
     font-size: 3rem;
   }
   .cal-button button {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
   }
   .cal-display h1 {
@@ -331,6 +327,10 @@ button:active {
   }
   .game-link{
     font-size: 2rem;
+  }
+  .cal-button {
+    grid-gap: .3rem;
+    padding: 2rem 1rem;
   }
 }
 @media screen and (max-width: 380px) {
@@ -348,16 +348,15 @@ button:active {
   }
   .cal{
     width: 98%;
-    height: 50%;
    }
    .calculator{
-     height: 50rem;
+     padding: 4vh 0;
    }
    #equal-to {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .cal-button button {
-    font-size: .75em;
+    font-size: 1.2rem;
     font-weight: bold;
   }
   .cal-display h1 {
@@ -371,6 +370,10 @@ button:active {
   }
   .gameHeading {
     font-size: 2.5rem;
+  }
+  .cal-button {
+    grid-gap: .25rem;
+    padding: 2rem 1rem;
   }
 
 }
@@ -387,20 +390,18 @@ button:active {
   }
   .cal{
     width: 100%;
-    height: 50%;
-    bottom: 52%;
    }
   .cal-display{
     height: 6rem;
    }
    .calculator{
-     height: 45rem;
+     padding: 5vh 0;
    }
    #equal-to {
     font-size: 1.5rem;
   }
   .cal-button button {
-    font-size: .6rem;
+    font-size: .8rem;
     font-weight: bold;
   }
   .cal-display h1 {
@@ -415,5 +416,8 @@ button:active {
   .game-link{
     font-size: 1.5rem;
   }
-
+  .cal-button {
+    grid-gap: .1rem;
+    padding: 1rem .1rem;
+  }
 }
