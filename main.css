@@ -72,11 +72,8 @@ html{
 .cal {
   background: linear-gradient(to right,#7f7880, #1c1b1b);
   width: 60%;
-  /* height: 95%; */
   position: relative;
-  /* bottom: 8%; */
   border-radius: 1rem;
-   /* bottom rigth blur intensity*/
   box-shadow: .4rem .6rem white;
 }
 
@@ -88,16 +85,14 @@ html{
   color: white;
   border-radius: 1rem 1rem 0px 0px;
   height: 12rem;
-  /* overflow: auto; */
-  padding:1rem 2rem;
-  /* width: 75%; */
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  overflow: auto;
 }
 .cal-display h1 {
+  text-align: right;
+  width: 100%;
   font-size: 2.5rem;
-  overflow: auto;
 }
 /* Buttons  */
 
