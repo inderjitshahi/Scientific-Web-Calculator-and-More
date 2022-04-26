@@ -19,10 +19,16 @@ html{
   justify-content: center;
   align-items: center;
 }
- .calculator #particles-js{
+ /* .calculator #particles-js{
   position:absolute;
   height: 90%;
   width: 100%;
+} */
+ #particles-js{
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 /************* End of Common Styles  ***********************/
 
@@ -75,6 +81,7 @@ html{
 /* cal container  */
 
 .cal {
+  z-index: 2;
   background: linear-gradient(to right,#7f7880, #1c1b1b);
   width: 60%;
   position: relative;
@@ -200,6 +207,7 @@ button:active {
   background: linear-gradient(to right, #580b3a, #f03eac);
 }
 .box {
+  z-index: 2;
   /* position: relative; */
   /* width: 100%; */
   display: flex;
@@ -231,7 +239,7 @@ button:active {
 
 /**************************contact***********************/
 .contact {
-  position: relative;
+  /* position: relative; */
   font-size: 4rem;
   width: 100%;
   color: white;
