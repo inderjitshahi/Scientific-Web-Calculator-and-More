@@ -19,6 +19,11 @@ html{
   justify-content: center;
   align-items: center;
 }
+ .calculator #particles-js{
+  position:absolute;
+  height: 90%;
+  width: 100%;
+}
 /************* End of Common Styles  ***********************/
 
 /******************* hrading  ****************/
@@ -159,7 +164,7 @@ button:active {
 
 /***********************End of Calculator **********************/
 
-/***************** End of Game  ***********************/
+/***************** Start of Game  ***********************/
 .game {
   background: url(bg1.jpg) center  no-repeat;
   padding: 10rem;
@@ -226,6 +231,7 @@ button:active {
 
 /**************************contact***********************/
 .contact {
+  position: relative;
   font-size: 4rem;
   width: 100%;
   color: white;
