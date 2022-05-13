@@ -44,7 +44,25 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 
- 
+  //   else if (guess > secretNumber) {
+  //     if (score > 0) {
+  //       document.querySelector(".message").textContent = "Too High";
+  //       score -= 1;
+  //       document.querySelector(".score").textContent = score;
+  //     } else {
+  //       document.querySelector(".message").textContent = "😥 You Loose the game";
+  //     }
+  //   }
+  //   //guess is too low
+  //   else {
+  //     if (score > 0) {
+  //       document.querySelector(".message").textContent = "Too Low";
+  //       score--;
+  //       document.querySelector(".score").textContent = score;
+  //     } else {
+  //       document.querySelector(".message").textContent = "😥 You Loose the game";
+  //     }
+  //   }
 });
 
 //Resetting values
@@ -59,4 +77,9 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").textContent = "?";
   document.querySelector(".guess").value = "";
 });
+
+// document.querySelector('.number').textContent=12;
+// document.querySelector('.score').textContent=20;
+// document.querySelector('.guess').value=0;
+// value funvtion is used to see or assign value.
 

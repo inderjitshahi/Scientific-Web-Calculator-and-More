@@ -1,3 +1,5 @@
+/******* Start defualt  **************/
+
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
@@ -17,8 +19,14 @@ body {
   background-color: #222;
   /* background-color: #60b347; */
 }
+#particles-js{
+  
+}
 
-/* LAYOUT */
+/******* END default  **************/
+
+
+/******* Start Layout  **************/
 header {
   position: relative;
   height: 35vh;
@@ -70,16 +78,10 @@ h1 {
 }
 
 .between {
-  font-size: 1.4rem;
+  font-size: 2rem;
   position: absolute;
   top: 2rem;
-  right: 2rem;
-}
-
-.again {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
+  right: 1rem;
 }
 
 .guess {
@@ -118,38 +120,52 @@ h1 {
   margin-bottom: 2rem;
 }
 
+/*** Start Again  ****/
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+/*** END Again  *****/
+
+
+/******* END Layout  **************/
+
+
+
+/******* START Making Responsive **************/
 @media screen and (max-width: 1000px) {
-  html {
-    font-size: 30%;
+ 
+  header{
+    height: 50vh;
   }
-  body {
-    width: 90%;
-  }
+
   .between {
-    right: 10em;
+    right: .1rem;
   }
 }
 @media screen and (max-width: 600px) {
   html {
-    font-size: 30%;
+    font-size: 35%;
   }
-  body {
-    width: 90%;
-    overflow: auto;
+  .between{
+    position: static;
   }
-  .between {
-    right: 6em;
+  .again{
+    margin-top: 1rem;
+    position: static;
   }
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;;
+}
 }
 @media screen and (max-width: 300px) {
   html {
     font-size: 25%;
-  }
-  body {
-    overflow: auto;
-  }
-  .between {
-    right: 6em;
   }
   .guess {
     width: 15rem;
@@ -158,6 +174,7 @@ h1 {
     width: 15rem;
   }
 }
+
 /* .lable-highscore{
   overflow-x: auto;
 } */
@@ -167,3 +184,5 @@ h1 {
       width: 90% ;
   }
 } */
+
+/******* END Making Responsive **************/

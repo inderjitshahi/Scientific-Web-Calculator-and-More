@@ -250,6 +250,9 @@ button:active {
   justify-content: center;
   height: 60vh;
 }
+.contact li{
+z-index: 2;
+}
 /*************************End of contact***********************/
 
 /* CopyRight  */
