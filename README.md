@@ -1,17 +1,17 @@
-# Milaan built with Next JS 12+, TailwindCSS, React.js, and React-awesome-reveal  [![LinkedIn](/public/images/linkedin.png)](https://www.linkedin.com/in/inderjit-shahi-b9880a201/)
+# IS_Calc built with Vanilla Js, CSS3, HTML5, and Particles.js  [![LinkedIn](/public/images/linkedin.png)](https://www.linkedin.com/in/inderjit-shahi-b9880a201/)
 
 <p align="center">
   <a href="https://inder-cal.netlify.app/"><img src="public/images/banner.png" alt="Website banner"></a>
 </p>
 
-🚀 Milaan, the Blogging Website created in Next.js, ⚡️ Made with developer experience first: Next.js, React.js, React-awesome-reveal,  VSCode, Vercel.
+🚀 IS_Calc, the Scientific Calculator Website created in Vanilla.js, ⚡️ Made with developer experience first: Vanilla Js, CSS3, HTML5, and Particles.js,  VSCode, Netlify.
 
 
 ### DEMO
 
-[![ISDoc Banner](/public/images/merged.png)](https://milaan-gamma.vercel.app/)
+[![ISDoc Banner](/public/images/merged.png)](https://inder-cal.netlify.app/)
 
-Check out [live demo](https://milaan-gamma.vercel.app/).
+Check out [live demo](https://inder-cal.netlify.app/).
 
 ### Features
 
